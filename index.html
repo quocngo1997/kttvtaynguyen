@@ -1,160 +1,184 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>
-      Đài khí tượng thủy văn khu vực Tây Nguyên
+        Đài khí tượng thủy văn khu vực Tây Nguyên
     </title>
     <!--Bật Responsive-->
     <link rel="stylesheet" type="text/css" href="css/uikit.min.css" />
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <link rel="stylesheet" type="text/css" href="css/responsive.css" />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="css/jquery.datetimepicker.css"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Roboto:300,400,700"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700"
-      rel="stylesheet"
-    />
-    <link
-      rel="icon"
-      href="http://www.nchmf.gov.vn/favicon.ico"
-      type="image/x-icon"
-    />
-    <link
-      rel="stylesheet"
-      href="../../unpkg.com/leaflet%401.4.0/dist/leaflet.css"
-    />
-  </head>
-  <body>
+    <link rel="stylesheet" type="text/css" href="css/jquery.datetimepicker.css" />
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700" rel="stylesheet" />
+</head>
+
+<body>
     <header id="header" class="uk-box-shadow-small">
-      <section class="top-hd">
-        <div class="uk-banner">
-          <div class="uk-container">
-            <div class="title-banner">
-              Đài khí tượng Thủy văn khu vực Tây Nguyên
+        <section class="top-hd">
+            <div class="uk-banner">
+                <div class="uk-container">
+                    <div class="title-banner">
+                        Đài khí tượng Thủy văn khu vực Tây Nguyên
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
-      </section>
-      <section class="bot-hd">
-        <div class="uk-container">
-          <nav>
-            <div class="uk-navbar-left">
-              <ul class="uk-navbar-nav">
-                <li>
-                  <a href="">Trang chủ</a>
-                </li>
-                <li>
-                  <a href="">Giới thiệu</a>
-                </li>
-                <li>
-                  <a href="">Thời tiết</a>
-                </li>
-                <li>
-                  <a href="">Hoạt động nội bộ</a>
-                </li>
-                <li>
-                  <a href="">Khí tượng</a>
-                </li>
-                <li>
-                  <a href="">Thủy văn</a>
-                </li>
-                <li>
-                  <a href="">Môi trường</a>
-                </li>
-              </ul>
+        </section>
+        <section class="bot-hd">
+            <div class="uk-container">
+                <nav>
+                    <div class="uk-navbar-left">
+                        <ul class="uk-navbar-nav">
+                            <li>
+                                <a href="">Trang chủ</a>
+                            </li>
+                            <li>
+                                <a href="">Giới thiệu</a>
+                            </li>
+                            <li>
+                                <a href="">Thời tiết</a>
+                            </li>
+                            <li>
+                                <a href="">Hoạt động nội bộ</a>
+                            </li>
+                            <li>
+                                <a href="">Khí tượng</a>
+                            </li>
+                            <li>
+                                <a href="">Thủy văn</a>
+                            </li>
+                            <li>
+                                <a href="">Môi trường</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
             </div>
-          </nav>
-        </div>
-      </section>
+        </section>
     </header>
     <div id="wrapper">
-      <div class="uk-container uk-position-relative">
-        <section class="row-wrp">
-          <div class="uk-grid">
-            <div class="uk-width-expand@m uk-width-1-1@s">
-              <aside class="block-2">
-                <article class="row-block">
-                  <div class="main-row-block">
-                    <h4>Tin nội bộ</h4>
-                    <div
-                      class="ct-news-nb-block uk-box-shadow-small uk-position-relative"
-                    >
-                      <ul class="uk-list list-news uk-margin-remove-bottom">
-                        <li class="act-thumb-news-nb">
-                          <a
-                            href="#"
-                            alt="TIN NẮNG NÓNG DIỆN RỘNG Ở BẮC BỘ VÀ TRUNG BỘ"
-                            >ĐẠI HỘI ĐẢNG BỘ ĐÀI KTTV KHU VỰC TÂY NGUYÊN LẦN THỨ VI (NHIỆM KỲ 2015 - 2020)</label
+        <div class="uk-container uk-position-relative">
+            <section class="row-wrp">
+                <div class="uk-grid">
+                    <div class="uk-width-expand@m uk-width-1-1@s">
+                        <aside class="block-2">
+                            <article class="row-block">
+                                <div class="main-row-block">
+                                    <h4>Tin nội bộ</h4>
+                                    <div class="ct-news-nb-block uk-box-shadow-small uk-position-relative">
+                                        <ul class="uk-list list-news uk-margin-remove-bottom">
+                                            <li class="act-thumb-news-nb">
+                                                <a href="#" alt="TIN NẮNG NÓNG DIỆN RỘNG Ở BẮC BỘ VÀ TRUNG BỘ">ĐẠI HỘI ĐẢNG BỘ ĐÀI KTTV KHU VỰC TÂY NGUYÊN LẦN THỨ VI (NHIỆM KỲ 2015 - 2020)</label
                             ><img src="./images/new.jpg"
                           /></a>
-                          <div class="thumb-news-nb">
-                            <img src="./images/HDNB.jpg" />
-                          </div>
-                        </li>
-                        <li>
-                          <a
-                            href="#"
-                            alt="TIN MƯA DÔNG, CẢNH BÁO MƯA LỚN CỤC BỘ, LỐC, SÉT, MƯA ĐÁ VÀ GIÓ GIẬT MẠNH Ở VÙNG NÚI BẮC BỘ"
-                            >HỘI NGHỊ TỔNG KẾT NĂM 2014 ĐÀI KHÍ TƯỢNG THỦY VĂN KHU VỰC TÂY NGUYÊN</label
+                                                <div class="thumb-news-nb">
+                                                    <img src="./images/HDNB.jpg" />
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <a href="#" alt="TIN MƯA DÔNG, CẢNH BÁO MƯA LỚN CỤC BỘ, LỐC, SÉT, MƯA ĐÁ VÀ GIÓ GIẬT MẠNH Ở VÙNG NÚI BẮC BỘ">HỘI NGHỊ TỔNG KẾT NĂM 2014 ĐÀI KHÍ TƯỢNG THỦY VĂN KHU VỰC TÂY NGUYÊN</label
                             ><img src="./images/new.jpg"
                           /></a>
-                          <div class="thumb-news-nb">
-                            <img
-                              src="../../thoitietvietnam.gov.vn/upload/Article/thoitiet/2020/7/9/muatuonc97.gif"
-                            />
-                          </div>
-                        </li>
-                        <li>
-                            <a
-                              href="#"
-                              alt="TIN MƯA DÔNG, CẢNH BÁO MƯA LỚN CỤC BỘ, LỐC, SÉT, MƯA ĐÁ VÀ GIÓ GIẬT MẠNH Ở VÙNG NÚI BẮC BỘ"
-                              >TỔ CHỨC TRUNG THU CHO CÁC CHÁU THIẾU NHI</label
+                                                <div class="thumb-news-nb">
+                                                    <img src="../../thoitietvietnam.gov.vn/upload/Article/thoitiet/2020/7/9/muatuonc97.gif" />
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <a href="#" alt="TIN MƯA DÔNG, CẢNH BÁO MƯA LỚN CỤC BỘ, LỐC, SÉT, MƯA ĐÁ VÀ GIÓ GIẬT MẠNH Ở VÙNG NÚI BẮC BỘ">TỔ CHỨC TRUNG THU CHO CÁC CHÁU THIẾU NHI</label
                               ><img src="./images/new.jpg"
                             /></a>
-                            <div class="thumb-news-nb">
-                              <img
-                                src="../../thoitietvietnam.gov.vn/upload/Article/thoitiet/2020/7/9/muatuonc97.gif"
-                              />
-                            </div>
-                          </li>
-                          <li>
-                            <a
-                              href="#"
-                              alt="TIN MƯA DÔNG, CẢNH BÁO MƯA LỚN CỤC BỘ, LỐC, SÉT, MƯA ĐÁ VÀ GIÓ GIẬT MẠNH Ở VÙNG NÚI BẮC BỘ"
-                              >NGHỊ ĐỊNH HƯỚNG DẪN THI HÀNH LUẬT PHÒNG, CHỐNG THIÊN TAI</label
+                                                <div class="thumb-news-nb">
+                                                    <img src="../../thoitietvietnam.gov.vn/upload/Article/thoitiet/2020/7/9/muatuonc97.gif" />
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <a href="#" alt="TIN MƯA DÔNG, CẢNH BÁO MƯA LỚN CỤC BỘ, LỐC, SÉT, MƯA ĐÁ VÀ GIÓ GIẬT MẠNH Ở VÙNG NÚI BẮC BỘ">NGHỊ ĐỊNH HƯỚNG DẪN THI HÀNH LUẬT PHÒNG, CHỐNG THIÊN TAI</label
                               ><img src="./images/new.jpg"
                             /></a>
-                            <div class="thumb-news-nb">
-                              <img
-                                src="../../thoitietvietnam.gov.vn/upload/Article/thoitiet/2020/7/9/muatuonc97.gif"
-                              />
-                            </div>
-                          </li>
-                      </ul>
-                    </div>
-                  </div>
-                </article>
-                <article class="row-block">
-                  <div class="main-row-block">
-                    <h2>Tin khí tượng</h2>
-                    <div
-                      class="ct-news-nb-block uk-box-shadow-small uk-position-relative"
-                    >
-                      <ul class="uk-list list-news uk-margin-remove-bottom">
-                        <li class="act-thumb-news-nb">
-                          <a
-                            href="http://nchmf.gov.vn/Kttvsite/vi-VN/1/phan-tich-va-du-bao-xu-the-thoi-tiet-10-ngay-cac-khu-vuc-tren-pham-vi-ca-nuoc-tu-dem-09-den-ngay-19-7-2020-post5366.html"
-                            alt="PHÂN TÍCH VÀ DỰ BÁO XU THẾ THỜI TIẾT 10 NGÀY CÁC KHU VỰC TRÊN PHẠM VI CẢ NƯỚC (Từ đêm 09 đến ngày 19/7/2020)"
-                            >PHÂN TÍCH VÀ DỰ BÁO XU THẾ THỜI TIẾT 10 NGÀY CÁC
+                                                <div class="thumb-news-nb">
+                                                    <img src="../../thoitietvietnam.gov.vn/upload/Article/thoitiet/2020/7/9/muatuonc97.gif" />
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <article class="row-block-top">
+                                <div class="swiper-container gallery-thumbs">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">Pleiku</div>
+                                        <div class="swiper-slide">Kon Tum</div>
+                                        <div class="swiper-slide">Buôn Ma Thuột</div>
+                                        <div class="swiper-slide">Gia Nghĩa</div>
+                                        <div class="swiper-slide">Đà Lạt</div>
+                                        <div class="swiper-slide">Bảo Lộc</div>
+                                    </div>
+                                </div>
+                                <div class="swiper-container gallery-top">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <div class="swiper-slide-img" style="background-image:url('./images/gia-lai.jpg')"></div>
+                                            <div class="over-whether">
+                                                <span class="whether-present">Nhiệt độ hiện tại:</span>
+                                                <span class="whether-power">22.9°C</span>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="swiper-slide-img" style="background-image:url('./images/gia-lai.jpg')"></div>
+                                            <div class="over-whether">
+                                                <span class="whether-present">Nhiệt độ hiện tại:</span>
+                                                <span class="whether-power">22.9°C</span>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="swiper-slide-img" style="background-image:url('./images/gia-lai.jpg')"></div>
+                                            <div class="over-whether">
+                                                <span class="whether-present">Nhiệt độ hiện tại:</span>
+                                                <span class="whether-power">22.9°C</span>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="swiper-slide-img" style="background-image:url('./images/gia-lai.jpg')"></div>
+                                            <div class="over-whether">
+                                                <span class="whether-present">Nhiệt độ hiện tại:</span>
+                                                <span class="whether-power">22.9°C</span>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="swiper-slide-img" style="background-image:url('./images/gia-lai.jpg')"></div>
+                                            <div class="over-whether">
+                                                <span class="whether-present">Nhiệt độ hiện tại:</span>
+                                                <span class="whether-power">22.9°C</span>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="swiper-slide-img" style="background-image:url('./images/gia-lai.jpg')"></div>
+                                            <div class="over-whether">
+                                                <span class="whether-present">Nhiệt độ hiện tại:</span>
+                                                <span class="whether-power">22.9°C</span>
+                                            </div>
+                                        </div>
+                                        <!-- <div class="swiper-slide" style="background-image:url('./images/kon-tum.jpg')"></div>
+                                        <div class="swiper-slide" style="background-image:url('./images/buon-ma-thuot.jpg')"></div>
+                                        <div class="swiper-slide" style="background-image:url('./images/gia-nghia.jpg')"></div>
+                                        <div class="swiper-slide" style="background-image:url('./images/da-lat.jpg')"></div>
+                                        <div class="swiper-slide" style="background-image:url('./images/bao-loc.jpg')"></div> -->
+                                    </div>
+                                </div>
+                            </article>
+
+                            <article class="row-block">
+                                <div class="main-row-block">
+                                    <h2>Tin khí tượng</h2>
+                                    <div class="ct-news-nb-block uk-box-shadow-small uk-position-relative">
+                                        <ul class="uk-list list-news uk-margin-remove-bottom">
+                                            <li class="act-thumb-news-nb">
+                                                <a href="http://nchmf.gov.vn/Kttvsite/vi-VN/1/phan-tich-va-du-bao-xu-the-thoi-tiet-10-ngay-cac-khu-vuc-tren-pham-vi-ca-nuoc-tu-dem-09-den-ngay-19-7-2020-post5366.html" alt="PHÂN TÍCH VÀ DỰ BÁO XU THẾ THỜI TIẾT 10 NGÀY CÁC KHU VỰC TRÊN PHẠM VI CẢ NƯỚC (Từ đêm 09 đến ngày 19/7/2020)">PHÂN TÍCH VÀ DỰ BÁO XU THẾ THỜI TIẾT 10 NGÀY CÁC
                             KHU VỰC TRÊN PHẠM VI CẢ NƯỚC (Từ đêm 09 đến ngày
                             19/7/2020)<label>(09/07/2020)</label
                             ><span>new</span></a
@@ -266,5 +290,28 @@
         </section>
       </div>
     </div>
+    <script src="js/swiper.min.js"></script>
+    <script>
+      var galleryThumbs = new Swiper('.gallery-thumbs', {
+      spaceBetween: 10,
+      freeMode: true,
+      watchSlidesVisibility: true,
+      watchSlidesProgress: true,
+      breakpoints: {
+          480: {
+            slidesPerView: 3,
+          },
+          1024: {
+            slidesPerView: 6,
+          },
+        },
+    });
+    var galleryTop = new Swiper('.gallery-top', {
+      spaceBetween: 10,
+      thumbs: {
+        swiper: galleryThumbs
+      }
+    });
+    </script>
   </body>
 </html>
