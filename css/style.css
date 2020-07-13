@@ -1,7 +1,7 @@
 /* swiper */
 
 .row-block-top {
-    height: 500px;
+    height: 600px;
     margin-bottom: 40px;
 }
 
@@ -15,7 +15,7 @@
 .swiper-slide .swiper-slide-img {
     background-size: cover;
     background-position: center;
-    height: 90%;
+    height: 87%;
 }
 
 .swiper-slide .over-whether {
@@ -24,14 +24,16 @@
 }
 
 .swiper-slide .over-whether .whether-present {
-    font-size: 17px;
-}
-
-.swiper-slide .over-whether .whether-power {
     font-size: 28px;
     font-weight: bold;
     padding-left: 5px;
     color: #009de2;
+    display: block;
+    margin-bottom: 4px;
+}
+
+.swiper-slide .over-whether .whether-power {
+    display: block;
 }
 
 .gallery-top {
@@ -43,6 +45,12 @@
     height: 38px;
     box-sizing: border-box;
     padding: 10px 0;
+}
+
+.thumb-news-whether {
+    background-size: cover;
+    background-position: center;
+    height: 210px;
 }
 
 .gallery-thumbs .swiper-slide {
@@ -759,10 +767,6 @@ h6 {
     text-align: center
 }
 
-.list-weather .icon-wt-3 img {
-    max-width: 40px;
-}
-
 .list-weather .tt-location {
     display: block;
     font-weight: 700;
@@ -770,6 +774,26 @@ h6 {
     text-transform: capitalize;
     margin-bottom: 5px;
     margin-top: 5px;
+}
+
+.list-weather .uk-hdnb .tt-location {
+    font-size: 14px;
+    line-height: 20px;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+}
+
+.uk-width-2-3.uk-hdnb {
+    padding-left: 10px;
+}
+
+.icon-wt-3.uk-img {
+    background-size: cover;
+    height: 70px;
+    background-position: center;
 }
 
 .list-weather .text-weather-location {
@@ -1130,7 +1154,7 @@ table.m-wt-location .ver-wt-location td {
 /**/
 
 #footer {
-    margin: 10px 0 20px
+    margin: 10px 0 0 0
 }
 
 .top-ft {
@@ -1198,6 +1222,7 @@ table.m-wt-location .ver-wt-location td {
 
 .bot-ft {
     padding-top: 20px;
+    padding-bottom: 30px;
     border-top: solid 1px #e0e0e0;
     background: steelblue;
 }
@@ -1206,7 +1231,8 @@ table.m-wt-location .ver-wt-location td {
     text-transform: uppercase;
     text-align: center;
     padding-bottom: 8px;
-    position: relative
+    position: relative;
+    color: #fff;
 }
 
 .box-ft h3:before {
@@ -1222,7 +1248,36 @@ table.m-wt-location .ver-wt-location td {
 }
 
 .row-box-ft {
-    margin-top: 10px
+    margin-top: 25px;
+    color: #fff;
+    text-align: center;
+}
+
+.row-box-ft .row-left {
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+.row-box-ft a {
+    color: #fff;
+}
+
+.row-box-ft input {
+    height: 30px;
+    width: 100%;
+    padding: 10px;
+}
+
+.row-box-ft textarea {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+}
+
+.row-box-ft input:focus,
+.row-box-ft textarea:focus,
+.btn-send-form:focus {
+    outline: none;
 }
 
 .btn-send-form {
@@ -1231,7 +1286,26 @@ table.m-wt-location .ver-wt-location td {
     color: #fff;
     line-height: 30px;
     padding: 0 20px;
+    cursor: pointer;
     border-radius: 3px
+}
+
+.uk-slider-container .swiper-slide {
+    height: 220px;
+    background-size: cover;
+    background-position: center;
+}
+
+.uk-slider-container .swiper-container {
+    height: unset;
+}
+
+.uk-slider-container .swiper-button-prev:after,
+.uk-slider-container .swiper-container-rtl .swiper-button-next:after,
+.uk-slider-container .swiper-button-next:after,
+.uk-slider-container .swiper-container-rtl .swiper-button-prev:after {
+    font-size: 20px;
+    color: #fff;
 }
 
 .box-glr ul li {
