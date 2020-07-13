@@ -2,6 +2,7 @@
 
 .row-block-top {
     height: 500px;
+    margin-bottom: 40px;
 }
 
 .swiper-container {
@@ -19,15 +20,18 @@
 
 .swiper-slide .over-whether {
     text-align: center;
+    padding-top: 10px;
 }
 
 .swiper-slide .over-whether .whether-present {
-    font-size: 18px;
+    font-size: 17px;
 }
 
 .swiper-slide .over-whether .whether-power {
-    font-size: 30px;
+    font-size: 28px;
     font-weight: bold;
+    padding-left: 5px;
+    color: #009de2;
 }
 
 .gallery-top {
@@ -61,7 +65,7 @@
 }
 
 .gallery-thumbs .swiper-slide:hover {
-    letter-spacing: 2px;
+    letter-spacing: 1px;
 }
 
 
@@ -161,6 +165,7 @@ h6 {
     0% {
         background-position: 0 0;
     }
+
     100% {
         background-position: -3000px 0;
     }
@@ -1249,7 +1254,7 @@ table.m-wt-location .ver-wt-location td {
     padding: 20px;
     color: #fff;
     * Permalink - use to edit and share this gradient: http: //colorzilla.com/gradient-editor/#000000+0,000000+35,000000+75,000000+100&0+0,0.35+35,0.75+75,1+100 */
-    background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.35) 35%, rgba(0, 0, 0, 0.75) 75%, rgba(0, 0, 0, 1) 100%);
+        background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.35) 35%, rgba(0, 0, 0, 0.75) 75%, rgba(0, 0, 0, 1) 100%);
     /* FF3.6-15 */
     background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.35) 35%, rgba(0, 0, 0, 0.75) 75%, rgba(0, 0, 0, 1) 100%);
     /* Chrome10-25,Safari5.1-6 */
@@ -2073,6 +2078,7 @@ h2.tt-content-news {
         position: relative;
         overflow: hidden;
     }
+
     .tab-list {
         display: inline-block;
         list-style: none;
