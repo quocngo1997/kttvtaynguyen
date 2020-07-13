@@ -59,6 +59,42 @@
                 </nav>
             </div>
         </section>
+        <section class="header-mobile">
+          <img src="./images/logo-black.png" alt="">
+          <a
+            href="#"
+            class="side-nav-toggler"
+            id="side-nav-toggler"
+            onclick="clickShowMenu()"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </a>
+          <nav class="nav-side" id="nav-side">
+            <a class="closeMenu" onclick="clickHideMenu()">
+              <span class="line-one"></span>
+              <span class="line-two"></span>
+            </a>
+            <ul class="nav navbar-nav nav-mobile">
+              <li>
+                <a href="./index.html">Trang chủ</a>
+              </li>
+              <li>
+                <a href="./about-us.html">Giới thiệu</a>
+              </li>
+              <li>
+                <a href="./weather.html">Thời tiết</a>
+              </li>
+              <li>
+                <a href="./internal-operations.html">Hoạt động nội bộ</a>
+              </li>
+              <li><a href="./meteorology.html">Khí tượng</a></li>
+              <li><a href="./hydrological.html">Thủy văn</a></li>
+              <li><a href="./environment.html">Môi trường</a></li>
+            </ul>
+          </nav>
+        </section>
     </header>
     <div id="wrapper">
         <div class="uk-container uk-position-relative">
@@ -70,14 +106,14 @@
                                 <div class="main-row-block">
                                     <h4>Bản tin dự báo</h4>
                                     <div class="ct-news-nb-block uk-box-shadow-small uk-position-relative">
+                                      <div class="thumb-news-nb thumb-news-whether" style="background-image: url('./images/thoi-tiet.jpg');">
+                                      </div>
                                         <ul class="uk-list list-news uk-margin-remove-bottom">
                                             <li class="act-thumb-news-nb">
                                                 <a href="#" alt="TIN NẮNG NÓNG DIỆN RỘNG Ở BẮC BỘ VÀ TRUNG BỘ">TIN DỰ BÁO NẮNG NÓNG DIỆN RỘNG TẠI CÁC TỈNH TỪ QUẢNG BÌNH ĐẾN QUẢNG NGÃI</label
                             ><img src="./images/new.jpg"
                           /></a>
-                                                <div class="thumb-news-nb thumb-news-whether" style="background-image: url('./images/thoi-tiet.jpg');">
-                                                </div>
-                                            </li>
+                                               </li>
                                             <li>
                                                 <a href="#" alt="TIN MƯA DÔNG, CẢNH BÁO MƯA LỚN CỤC BỘ, LỐC, SÉT, MƯA ĐÁ VÀ GIÓ GIẬT MẠNH Ở VÙNG NÚI BẮC BỘ">DỰ BÁO THỜI TIẾT KHU VỰC TRUNG TRUNG BỘ (Ngày và đêm 13 tháng 7 năm 2020)</label
                             ><img src="./images/new.jpg"
@@ -268,7 +304,7 @@
                 </article>
               </aside>
             </div>
-            <div class="uk-width-auto@m uk-width-1-1@s">
+            <div class="uk-width-auto@m uk-width-1-1@s hdnb">
               <aside class="block-1">
                 <article class="row-block">
                   <div class="main-row-block">
@@ -351,7 +387,7 @@
                     <div class="ct-row-block uk-box-shadow-small">
                       <div class="iframe-video">
                         <iframe
-                        width="295"
+                        width="100%"
                         height="230"
                         src="https://www.youtube.com/embed/3-2qTMPe9Rc"
                         frameborder="0"
@@ -362,7 +398,7 @@
                       <p class="tt-video">Trailer hội nghị ủy ban bão quốc tế OK2</p>
                       <div class="iframe-video">
                         <iframe
-                        width="295"
+                        width="100%"
                         height="230"
                         src="https://www.youtube.com/embed/GnBDMo96EPU"
                         frameborder="0"
@@ -372,11 +408,11 @@
                       </div>
                       <p class="tt-video">Cần Thơ lần đầu bị xâm nhập mặn</p>
                       <div class="iframe-video">
-                        <iframe width="295" height="230" src="https://www.youtube.com/embed/5LsOcw6FeuM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <iframe width="100%" height="230" src="https://www.youtube.com/embed/5LsOcw6FeuM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                       </div>
                       <p class="tt-video">Khẩn trương tìm giải pháp chống hạn, xâm nhập mặn</p>
                       <div class="iframe-video">
-                        <iframe width="295" height="230" src="https://www.youtube.com/embed/eveMRxyhVZg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <iframe width="100%" height="230" src="https://www.youtube.com/embed/eveMRxyhVZg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                       </div>
                       <p class="tt-video">Hạn mặn kỷ lục ở miền Tây: "không có màu của sự sống"</p>
                     </div>
@@ -465,6 +501,9 @@
       watchSlidesVisibility: true,
       watchSlidesProgress: true,
       breakpoints: {
+          320: {
+            slidesPerView: 2,
+          },
           480: {
             slidesPerView: 3,
           },
@@ -497,6 +536,15 @@
                 clickable: true,
             },
         });
+
+      function clickShowMenu() {
+        var element = document.getElementById("nav-side");
+        element.classList.add("in");
+      }
+      function clickHideMenu() {
+        var element = document.getElementById("nav-side");
+        element.classList.remove("in");
+      }
     </script>
   </body>
 </html>
