@@ -117,7 +117,9 @@
     line-height: 25px;
 }
 
+
 /* co cau to chuc */
+
 .content-structure .name-position {
     color: #ffffff;
     position: absolute;
@@ -410,7 +412,6 @@
 }
 
 @media print {
-
     .content-structure .subdirector>li:first-child,
     .content-structure .departments>li:first-child {
         border-bottom: 4px solid #000;
@@ -483,7 +484,6 @@
 }
 
 @media screen and (min-width: 200px) {
-
     .content-structure .department:first-child:before,
     .content-structure .department:last-child:before {
         border: none;
@@ -590,21 +590,17 @@
         padding: 0 5px;
         overflow: hidden;
     }
-
 }
 
 @media (max-width: 1300px) {
-
     .content-structure .departments .department {
         width: 16%;
         margin-left: 0.33333333334%;
         margin-right: 0.33333333334%;
     }
-
     .content-structure .name-province {
         line-height: 1.6rem;
     }
-
     .content-structure .sections .name-province .name-position-on {
         margin-bottom: 5px;
     }
@@ -614,7 +610,6 @@
     .content-structure .content {
         width: 700px;
     }
-
     .content-structure {
         overflow-x: scroll;
         margin-top: 0;
@@ -622,12 +617,12 @@
         position: relative;
         top: -3rem;
     }
-
     .content-structure .department.dep-f .wrapper-tooltip .tooltip {
         right: -4px;
         left: unset;
     }
 }
+
 
 /* Department/ section colors */
 
@@ -654,6 +649,7 @@
 .content-structure .department.dep-f .section a {
     background: #3e6b9a;
 }
+
 
 /* swiper */
 
@@ -830,7 +826,6 @@ h6 {
     0% {
         background-position: 0 0;
     }
-
     100% {
         background-position: -3000px 0;
     }
@@ -2035,7 +2030,7 @@ table.m-wt-location .ver-wt-location td {
     padding: 20px;
     color: #fff;
     * Permalink - use to edit and share this gradient: http: //colorzilla.com/gradient-editor/#000000+0,000000+35,000000+75,000000+100&0+0,0.35+35,0.75+75,1+100 */
-        background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.35) 35%, rgba(0, 0, 0, 0.75) 75%, rgba(0, 0, 0, 1) 100%);
+    background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.35) 35%, rgba(0, 0, 0, 0.75) 75%, rgba(0, 0, 0, 1) 100%);
     /* FF3.6-15 */
     background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.35) 35%, rgba(0, 0, 0, 0.75) 75%, rgba(0, 0, 0, 1) 100%);
     /* Chrome10-25,Safari5.1-6 */
@@ -2081,7 +2076,16 @@ table.m-wt-location .ver-wt-location td {
 }
 
 .uk-breadcrumb>*>* {
-    font-size: 15px
+    font-size: 15px;
+    display: unset !important;
+}
+
+.uk-breadcrumb li {
+    margin-bottom: 2px;
+}
+
+.uk-breadcrumb>* {
+    flex: unset !important;
 }
 
 .uk-breadcrumb>:nth-child(n+2):not(.uk-first-column):before {
@@ -2859,7 +2863,6 @@ h2.tt-content-news {
         position: relative;
         overflow: hidden;
     }
-
     .tab-list {
         display: inline-block;
         list-style: none;
