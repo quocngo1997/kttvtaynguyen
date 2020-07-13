@@ -632,17 +632,16 @@ h6 {
     display: block;
 }
 
-.list-news li .thumb-news-nb {
+.main-row-block .thumb-news-nb {
     position: absolute;
     left: 1px;
     top: 5px;
     width: 310px;
     max-height: 100%;
     overflow: hidden;
-    display: none;
 }
 
-.list-news li .thumb-news-nb img {
+.main-row-block .thumb-news-nb img {
     width: 310px;
     height: 210px;
     max-width: none;
@@ -924,6 +923,7 @@ table.m-wt-location .ver-wt-location td {
     margin: 0;
     font-weight: 700;
     margin-top: 10px;
+    margin-bottom: 10px;
     text-align: center
 }
 
