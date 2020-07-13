@@ -100,6 +100,23 @@
     color: #333;
 }
 
+.uk-news-cate .uk-first-column {
+    width: 30%;
+}
+
+.uk-news-cate .link-title {
+    line-height: 26px;
+}
+
+.uk-news-cate .description {
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    overflow: hidden;
+    line-height: 25px;
+}
+
 /* co cau to chuc */
 .content-structure .name-position {
     color: #ffffff;
